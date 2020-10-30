@@ -14,5 +14,12 @@ public class Triangle {
         this.v2 = b;
         this.v3 = c;
     }
+    public double getPerimeter() {
+        double a = v1.distanceTo(v2);
+        double b = v1.distanceTo(v3);
+        double c = v2.distanceTo(v3);
+
+        return a + b + c;
+    }
     
 }
