@@ -24,6 +24,9 @@ public class Point{
       return y;
     }  
     
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
     public double distanceTo(Point other){
         return Math.sqrt((x-other.x)*(x-other.x)+(y-other.y)*(y-other.y));
     }
